@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+import Welcome from './Welcome';
+import Secured from './Secured';
+import NoLogin from './NoLogin';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+    return (
+      <BrowserRouter>
+        <div className="container">
+          <ul>
+            <li><Link to="/welcome">public component</Link></li>
+            <li><Link to="/secured">secured component</Link></li>
+          </ul>
+          <Route exact path="/welcome" component={Welcome} />
+          <Route path="/secured" component={Secured} />
+          <Route path="/nologin" component={NoLogin} />
+        </div>
+      </BrowserRouter>
+    );
+}
 export default App;
