@@ -1,14 +1,25 @@
-import React from 'react'
 import useKeyCloak from './UseKeyCloak';
+import UserInfo from './UserInfo';
+import React, { useEffect } from 'react';
 
-function Secured() {
-  const authenticated = useKeyCloak();
+export default function Secured() {
+  const [authenticated, keycloak] = useKeyCloak();
 
+  useEffect(() => {
+    //console.log("keycloak", keycloak.token)
+    console.log("state keycloak", keycloak)
+    console.log("state authenticated", authenticated)
+  }, []);
   return (
+
     <div>
-      {authenticated && (<div>loggin succeed</div>)}
+      {keycloak && authenticated && (<div>
+        <div>loggin succeed</div>
+        <div> <UserInfo keycloak={keycloak} authenticated={authenticated} /></div>
+      </div>
+      )}
       {!authenticated && <div>loggin falied</div>}
     </div>
+
   )
 }
-export default Secured 
