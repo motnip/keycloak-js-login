@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { withRouter } from 'react-router-dom'
 
-const Logout = (props) => {
+function Logout(props) {
 
   function logout() {
     props.history.push('/');
