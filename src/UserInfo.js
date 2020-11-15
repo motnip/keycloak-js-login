@@ -2,9 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 
 const UserInfo = (props) => {
-//export default function UserInfo() {
-
-  //const [keycloak, setKeycloak] = useState();
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [id, setId] = useState();
