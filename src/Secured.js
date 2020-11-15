@@ -4,7 +4,7 @@ import Logout from './Logout';
 import React, { useEffect } from 'react';
 
 export default function Secured() {
-  const [authenticated, keycloak] = useKeyCloak();
+  const keycloak = useKeyCloak();
 
   return (
 

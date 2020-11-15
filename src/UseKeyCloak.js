@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react'
 import Keycloak from 'keycloak-js';
 
 function useKeyCloak() {
-    const [authenticated, setAuthenticated] = useState(false);
     const [keycloak, setKeycloak] = useState(null);
 
     useEffect(() => {
@@ -16,14 +15,13 @@ function useKeyCloak() {
 
         keycloak.init(initSetting)
             .then(authenticated => {
-                console.log("init - authenticated: ", authenticated)
-                setAuthenticated(authenticated);
+                console.log("init - authenticated")
                 setKeycloak(keycloak)
             });
         console.log("afer init - authenticated: ", keycloak.authenticated)
     }, []);
 
-    return [authenticated, keycloak]
+    return keycloak
 }
 
 export default useKeyCloak
