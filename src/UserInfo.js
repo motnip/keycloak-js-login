@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
 
-const UserInfo = (props) => {
+export default function UserInfo(props) {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [id, setId] = useState();
@@ -25,5 +24,3 @@ const UserInfo = (props) => {
   );
 
 }
-
-export default UserInfo
