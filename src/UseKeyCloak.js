@@ -7,8 +7,8 @@ function useKeyCloak() {
 
     useEffect(() => {
         var initSetting = { 
-            onLoad: 'check-sso',
-            silentCheckSsoRedirectUri: window.location.origin + '/silent-check-sso.html' }
+            onLoad: 'login-required',
+        }
         var keycloak = Keycloak('/keycloak.json');
         
         console.log("before init - authenticated: ", keycloak.authenticated)
