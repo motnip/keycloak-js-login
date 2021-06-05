@@ -3,7 +3,7 @@ import UserInfo from './UserInfo';
 import Logout from './Logout';
 import React, { useEffect } from 'react';
 
-export default function Secured() {
+export default function UserDetails() {
   const keycloak = useKeyCloak();
 
   return (

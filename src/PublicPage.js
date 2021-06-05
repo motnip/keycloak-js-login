@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-function NoLogin(){
+function PublicPage(){
 
     return (
       <div>
@@ -8,4 +8,4 @@ function NoLogin(){
         </div>
     )
 }
-export default NoLogin;
+export default PublicPage;

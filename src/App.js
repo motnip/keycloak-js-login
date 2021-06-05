@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Welcome from './Welcome';
-import Secured from './Secured';
-import Secured2 from './Secured2';
-import NoLogin from './NoLogin';
+import Public from './PublicPage';
+import UserDetails from './UserDetails';
 import './App.css';
 
 function App() {
@@ -12,14 +11,13 @@ function App() {
       <BrowserRouter>
         <div className="container">
           <ul>
-            <li><Link to="/welcome">public component</Link></li>
-            <li><Link to="/secured">secured component</Link></li>
-            <li><Link to="/secured2">secured2 component</Link></li>
+            <li><Link to="/welcome">Welcome Page</Link></li>
+            <li><Link to="/public">Public page</Link></li>
+            <li><Link to="/user-details">User Details</Link></li>
           </ul>
           <Route exact path="/welcome" component={Welcome} />
-          <Route path="/secured" component={Secured} />
-          <Route path="/secured2" component={Secured2} />
-          <Route path="/nologin" component={NoLogin} />
+          <Route path="/public" component={Public} />
+          <Route path="/user-details" component={UserDetails} />
         </div>
       </BrowserRouter>
     );
