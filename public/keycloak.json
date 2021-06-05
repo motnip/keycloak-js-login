@@ -1,8 +1,8 @@
 {
-  "realm": "MyDemo",
+  "realm": "keycloak-tutorial",
   "auth-server-url": "http://localhost:8080/auth/",
   "ssl-required": "external",
-  "resource": "my-reactclient",
+  "resource": "my-react-client",
   "public-client": true,
   "confidential-port": 0
 }
