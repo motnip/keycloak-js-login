@@ -10,7 +10,7 @@ The React application is a sample website with three pages:
 
 A docker-compose file runs an instance of the KeyCloak server used by the React component application.
 
-Moreover, there is a JSON file named filename.json. You can import this configuration file into the running Keycloak server, which recovers the setting I used to run the project or set the configuration up on your own.
+Moreover, there is a JSON file named realm-keycloak-tutorial.json. You can import this configuration file into the running Keycloak server, which recovers the setting I used to run the project or set the configuration up on your own.
 
 ## Installation 
 
@@ -41,7 +41,7 @@ On the left side menu click on master.
 A drop-down menu is open, then click on "Add realm".
 
 You need to import the configuration (you can set it up on your own following the link in the Acknowledgements section on the bottom).
-Click on "select file" and pick, from the project root folder, the file named filename.json.
+Click on "select file" and pick, from the project root folder, the file named realm-keycloak-tutorial.json.
 Kyelcoak will import the setting for our project.
 
 Now we need to add a user to our application:
