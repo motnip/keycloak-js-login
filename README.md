@@ -4,8 +4,8 @@
 This project is a sample of how to integrate KeyCloak into a React project.
 
 The React application is a sample website with three pages:
-- Welcome: it s a welcome page that doesn't require any login
-- Public page: is a page that does not require any log in
+- Welcome: it is a welcome page that doesn't require any login
+- Public page: it is a page that does not require any log in
 - User Details: it is a page that shows some information about the logged user. Indeed you need to log in. The page gets the user's data from the KeyCloak token.
 
 A docker-compose file runs an instance of the KeyCloak server used by the React component application.
