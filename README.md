@@ -26,7 +26,7 @@ Clone the projet:
 Run the keycloak server.
 From the projetc root folder run:
 ```bash 
-  docker-compose -d
+  docker-compose up -d
 ```    
 This command will run the Keycloak server.
 Now we need to import the configuration which set the application's client up.
