@@ -41,6 +41,7 @@ On the left side menu click on master.
 A drop-down menu is open, then click on "Add realm".
 
 You need to import the configuration (you can set it up on your own following the link in the Acknowledgements section on the bottom).
+
 Click on "select file" and pick, from the project root folder, the file named realm-keycloak-tutorial.json.
 Kyelcoak will import the setting for our project.
 
