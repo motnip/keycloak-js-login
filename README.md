@@ -17,13 +17,14 @@ Moreover, there is a JSON file named realm-keycloak-tutorial.json. You can impor
 
 Install and run the project.
 
-### Keycloak server
 Clone the projet:
 
 ```bash 
   git@github.com:motnip/keycloak-js-login.git
   cd keycloak-js-login
 ```
+
+### Keycloak server
 
 Run the keycloak server.
 From the projetc root folder run:
@@ -37,20 +38,22 @@ Open the browser and go to localhost:8080
 Click on "Administration console". Log in with user admin and password admin.
 (Don not use this in production! :D)
 
-### Users and roles
 Now it is time to add a Realm for our application.
 
-On the left side menu click on master. 
-A drop-down menu is open, then click on "Add realm".
-
-You need to import the configuration (you can set it up on your own following the link in the Acknowledgements section on the bottom).
-Click on "select file" and pick, from the project root folder, the file named realm-keycloak-tutorial.json.
+From "Administration console" page:
+- On the left side menu click on master. 
+- A drop-down menu is open, then click on "Add realm".
+- Import the configuration. Click on "select file" and pick, from the project root folder, the file named realm-keycloak-tutorial.json.
 Kyelcoak will import the setting for our project.
 
+You can to import the configuration or you can set it up on your own following the link in the Acknowledgements section on the bottom.
+
+### Users and roles
 
 Now we need to add two users to our application:
-user@acme.com
-manager@acme.com
+- user@acme.com
+- manager@acme.com
+
 To do that:
 - On the left side, select "Users".
 - Click on "Add user", fill down the form and click save.
