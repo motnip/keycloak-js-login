@@ -3,7 +3,7 @@
 
 This project aims to explain how Keycloak works and its mechanism, using a simple ReactJS code.
 
-The React application is a sample website with three pages:
+The React application is a sample website with four pages:
 - Welcome: it is a welcome page that doesn't require any login
 - Public page: it is a page that does not require any log in
 - Manager: Only users who have the role "manager" can access it. This page contains a simple HTML table with a list of employees
@@ -27,7 +27,7 @@ Clone the projet:
 Run the keycloak server.
 From the projetc root folder run:
 ```bash 
-  docker-compose start
+  docker-compose up -d
 ```    
 This command will run the Keycloak server.
 Now we need to import the configuration which set the application's client up.
