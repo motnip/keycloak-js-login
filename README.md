@@ -17,6 +17,7 @@ Moreover, there is a JSON file named realm-keycloak-tutorial.json. You can impor
 
 Install and run the project.
 
+### Keycloak server
 Clone the projet:
 
 ```bash 
@@ -60,6 +61,8 @@ To do that:
 Now you need to assign a role to each user:
 - Assign the role "user" to user@acme.com 
 - Assign the role "manager" to manager@acme.com.
+
+### React app
 
 Let us move to the React side. Back on the terminal and run:
 
